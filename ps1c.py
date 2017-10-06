@@ -5,9 +5,6 @@ annual_return_rate = .04
 monthly_return_rate = annual_return_rate / 12
 number_of_months = 36
 down_payment = 250000
-monthly_savings = 0
-low = 0.0
-high = 1.0
 
 total_earned = 0
 for month in range(1,37):
@@ -19,6 +16,8 @@ total_earned = round(total_earned, 2)
 
 solved = False
 count = 0
+low = 0.0
+high = 1.0
 
 if total_earned < down_payment:
   solved = True
@@ -28,8 +27,6 @@ while solved == False:
   savings_rate = (low+high) / 2
   total_saved = total_earned * savings_rate
 
-  # print("low: " + str(low) + "... rate: " + str(savings_rate) + "... high: " + str(high) + '... total saved: ' + str(total_saved))
-  
   if total_saved > (down_payment-100) and total_saved < (down_payment+100):
     solved = True
   elif total_saved > down_payment:

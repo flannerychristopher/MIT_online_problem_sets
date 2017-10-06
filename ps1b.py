@@ -1,4 +1,3 @@
-
 annual_salary = int(input("What is your annual salary?  "))
 portion_saved = float(input("How much can you afford to save each month? Enter as a decimal   "))
 

@@ -15,7 +15,6 @@ current_savings = 0
 number_of_months = 0
 annual_return_rate = 0.04
 monthly_return_rate = annual_return_rate / 12.0
-
 while current_savings < portion_down_payment:
   number_of_months += 1
   this_months_return = current_savings * monthly_return_rate
